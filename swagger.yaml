@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Mock Server API
+  version: 1.0.0
+  description: A simple mock server API
+
+servers:
+  - url: http://localhost:3000
+
+paths:
+  /api/system/global:
+    get:
+      summary: Get global system information
+      description: Returns the content of the specified JSON file
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        '500':
+          description: Internal server error

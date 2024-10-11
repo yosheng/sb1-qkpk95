@@ -1,0 +1,16 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "Mock server with dynamic Swagger documentation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "docker-compose build",
+    "deploy": "docker-compose up -d"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
